@@ -1,0 +1,6 @@
+.idea
+.DS_Store
+node_modules
+
+js/plugins/osu_buttons/styles/*.css*
+js/plugins/osu_icons/styles/*.css*

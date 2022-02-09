@@ -1,0 +1,186 @@
+.osu-colors {
+  p {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin: 2px;
+    cursor: pointer;
+    background-clip: content-box;
+    padding: 2px;
+    border: 2px dashed #ddd;
+    &.osu {
+      background-color: #d73f09;
+    }
+    &.sand {
+      background-color: #e0e0e0;
+    }
+    &.stratosphere {
+      background-color: #006a8e;
+    }
+    &.moondust {
+      background-color: #c6dae7;
+    }
+    &.dark {
+      background-color: #242424;
+    }
+    &.pine-stand {
+      background-color: #4a773c;
+    }
+    &.luminance {
+      background-color: #ffb500;
+    }
+    &.reindeer-moss {
+      background-color: #c4d6a4;
+    }
+    &.color-active {
+      border-color: #444;
+      border-style: solid;
+    }
+  }
+  label {
+    display: block !important;
+  }
+}
+
+#selected-icon {
+  position: absolute;
+  top: 100px;
+  right: 30px;
+  // adds contrast and spacing so white icons can be previewed
+  .fas, .fab, .far,
+  [class*="icon-osu"] {
+    border: 10px solid transparent;
+    &.white {
+      background: #999;
+      border-color: #999;
+    }
+  }
+
+}
+
+/* Colors */
+.osu {
+  color: #d73f09;
+}
+.sand {
+  color: #e0e0e0;
+}
+.stratosphere {
+  color: #006a8e;
+}
+.moondust {
+  color: #c6dae7;
+}
+.dark {
+  color: #242424;
+}
+.pine-stand {
+  color: #4A773C;
+}
+.luminance {
+  color: #FFB500;
+}
+.reindeer-moss {
+  color: #C4D6A4;
+}
+.white {
+  color: #fff;
+}
+
+.cke_reset_all {
+
+  .fab, .fa, .far, .fas, i {
+    &.fa-2x {
+      font-size: 2em;
+    }
+    &.fa-3x {
+      font-size: 3em;
+    }
+    &.fa-5x {
+      font-size: 5em;
+    }
+    &.fa-7x {
+      font-size: 7em;
+    }
+  }
+  .osu-icons {
+    height: 300px;
+    overflow: scroll;
+    i {
+      cursor: pointer;
+    }
+
+  }
+
+  .osu-sizes {
+    margin-bottom: 1rem;
+    p {
+      vertical-align: middle;
+      text-align: center;
+      height: 30px;
+      width: 30px;
+      display: table-cell;
+      margin: 2px;
+      border-right: 5px solid #ffffff;
+      cursor: pointer;
+      background: #eeeeee;
+      &.size-active {
+        background: #aaa;
+        font-weight: bold;
+      }
+    }
+    label {
+      display: block !important;
+    }
+  }
+
+  /* Sizes */
+  .icon_size-small {
+    font-size:2em;
+  }
+  .icon_size-medium {
+    font-size:3em;
+  }
+
+  .icon_size-large {
+    font-size:5em;
+  }
+
+  .icon_size-xlarge {
+    font-size:7em;
+  }
+
+  /* Colors */
+  .osu {
+    color: #d73f09;
+  }
+  .sand {
+    color: #e0e0e0;
+  }
+  .stratosphere {
+    color: #006a8e;
+  }
+  .moondust {
+    color: #c6dae7;
+  }
+  .dark {
+    color: #242424;
+  }
+  .pine-stand {
+    color: #4A773C;
+  }
+  .luminance {
+    color: #FFB500;
+  }
+  .reindeer-moss {
+    color: #C4D6A4;
+  }
+  .white {
+    color: #fff;
+  }
+}
+
+@import 'osu_font_icons';
+@import 'fontawesome';
+@import 'osu_fontawesome_ckeditor';
+@import 'osu_tab_interface';

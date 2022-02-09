@@ -1,0 +1,292 @@
+$osu: #d73f09;
+$link: #006A8E;
+$sand: #e0e0e0;
+$electric-beav: #ffaa4d;
+$pine-stand: #4a773c;
+$reindeer-moss: #c4d6a4;
+$hop-bine: #aa9d2e;
+$till: #b7a99a;
+$high-tide: #00859b;
+$seafoam: #b8dde1;
+$rogue-wave: #0d5257;
+$coastline: #a7aca2;
+$luminance: #ffb500;
+$candela: #fdd26e;
+$solar-flare: #d3832b;
+$high-desert: #7a6855;
+$stratosphere: #006a8e;
+$moondust: #c6dae7;
+$star-canvas: #003b5c;
+$crater: #8e9089;
+$lava: #af292e;
+$vulcan: #e69198;
+$basalt: #5e131a;
+$ash: #e6e6e6;
+$white: #fff;
+
+// CKE-specific styles - Must be duplicated outside of .cke_reset_all to work outside of edit mode
+.cke_reset_all {
+  // Color choice boxes
+  .osu {
+    color: #d73f09;
+  }
+  .sand {
+    color: #e0e0e0;
+  }
+  .stratosphere {
+    color: #006a8e;
+  }
+  .moondust {
+    color: #c6dae7;
+  }
+  .dark {
+    color: #242424;
+  }
+  .pine-stand {
+    color: #4A773C;
+  }
+  .luminance {
+    color: #FFB500;
+  }
+  .reindeer-moss {
+    color: #C4D6A4;
+  }
+  .white {
+    color: #fff;
+  }
+  
+  .primary {
+    background-color: $osu;
+  }
+  .secondary {
+    background-color: #000;
+  }
+  .default {
+    background-color: $ash;
+  }
+  .danger {
+    background-color: $lava;
+  }
+  .warning {
+    background-color: $luminance;
+  }
+  .info {
+    background-color: $star-canvas;
+  }
+  .success {
+    background-color: $pine-stand;
+  }
+
+  form.osu-buttons {
+    label {
+      font-weight: bold;
+    }
+
+    input, select {
+      border: 1px solid #ced4da;
+      padding: .375rem .75rem;
+    }
+  }
+
+  // Button Styles
+  .btn {
+    font-size: 18px;
+    line-height: 24px;
+    background-image: none;
+    background-color: $ash;
+    filter: none;
+    border-radius: 0;
+    color: #000;
+    border: 1px solid #fff;
+    padding: .5em .8em;
+    text-decoration: none;
+    box-shadow: none;
+    text-shadow: none;
+    &:hover, &:active, &:focus {
+      background-color: $ash;
+      text-decoration: underline;
+    }
+
+    &.btn-osu, &.btn-primary {
+      background-color: $osu;
+      color: #fff;
+      &:hover, &:active, &:focus {
+        background-color: $osu;
+        color: #fff;
+      }
+    }
+    &.btn-secondary {
+      background-color: #000;
+      color: #fff;
+      &:hover, &:active, &:focus {
+        background-color: #000;
+        color: #fff;
+      }
+    }
+    &.btn-danger {
+      background-color: $lava;
+      color: #fff;
+      &:hover, &:active, &:focus {
+        background-color: $lava;
+        color: #fff;
+      }
+    }
+    &.btn-pine-stand, &.btn-success {
+      background-color: $pine-stand;
+      color: #fff;
+      &:hover, &:active, &:focus {
+        background-color: $pine-stand;
+        color: #fff;
+      }
+    }
+    &.btn-luminance, &.btn-warning {
+      background-color: $luminance;
+      color: #000;
+      &:hover, &:active, &:focus {
+        background-color: $luminance;
+        color: #000;
+      }
+    }
+    &.btn-info {
+      background-color: $star-canvas;
+      color: #fff;
+      &:hover, &:active, &:focus {
+        background-color: $star-canvas;
+        color: #fff;
+      }
+    }
+    // !important require to override pine, since these colours do not exist in the theme
+    &.btn-stratosphere {
+      background-color: #006a8e !important;
+      color: #fff !important;
+    }
+    &.btn-moondust {
+      background-color: #c6dae7 !important;
+    }
+    &.btn-reindeer-moss {
+      background-color: #c4d6a4 !important;
+    }
+  }
+
+  .btn-mini {
+    font-size: 13.5px;
+  }
+  .btn-small {
+    font-size: 15.6px;
+  }
+  .btn-large {
+    font-size: 22px;
+  }
+
+  #selected-button {
+    position: relative;
+    float: right;
+  }
+
+  .button-sizes a {
+    cursor: pointer;
+  }
+
+  .button-sizes {
+    a {
+      &.size-active {
+        background: #aaa;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .selected-size {
+    border: 10px solid transparent;
+  }
+}
+
+.btn {
+  font-size: 18px;
+  line-height: 24px;
+  background-image: none;
+  background-color: $ash;
+  filter: none;
+  border-radius: 0;
+  color: #000;
+  border: 1px solid #fff;
+  padding: .5em .8em;
+  text-decoration: none;
+  box-shadow: none;
+  text-shadow: none;
+  &:hover, &:active, &:focus {
+    background-color: $ash;
+    text-decoration: underline;
+  }
+
+  &.btn-osu, &.btn-primary {
+    background-color: $osu;
+    color: #fff;
+    &:hover, &:active, &:focus {
+      background-color: $osu;
+      color: #fff;
+    }
+  }
+  &.btn-secondary {
+    background-color: #000;
+    color: #fff;
+    &:hover, &:active, &:focus {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+  &.btn-danger {
+    background-color: $lava;
+    color: #fff;
+    &:hover, &:active, &:focus {
+      background-color: $lava;
+      color: #fff;
+    }
+  }
+  &.btn-pine-stand, &.btn-success {
+    background-color: $pine-stand;
+    color: #fff;
+    &:hover, &:active, &:focus {
+      background-color: $pine-stand;
+      color: #fff;
+    }
+  }
+  &.btn-luminance, &.btn-warning {
+    background-color: $luminance;
+    color: #000;
+    &:hover, &:active, &:focus {
+      background-color: $luminance;
+      color: #000;
+    }
+  }
+  &.btn-info {
+    background-color: $star-canvas;
+    color: #fff;
+    &:hover, &:active, &:focus {
+      background-color: $star-canvas;
+      color: #fff;
+    }
+  }
+  &.btn-stratosphere {
+    background-color: #006a8e !important;
+    color: #fff !important;
+  }
+  &.btn-moondust {
+    background-color: #c6dae7 !important;
+  }
+  &.btn-reindeer-moss {
+    background-color: #c4d6a4 !important;
+  }
+}
+
+.btn-mini {
+  font-size: 13.5px;
+}
+.btn-small {
+  font-size: 15.6px;
+}
+.btn-large {
+  font-size: 22px;
+}
+
+@import 'osu_tab_interface';

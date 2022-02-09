@@ -1,17 +1,5 @@
 {
-  "name": "osu-icons-ckeditor",
-  "version": "1.0.0",
-  "description": "",
-  "main": "osu_icons.scss",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:osu-wams/osu_ckeditor_plugins.git"
-  },
-  "author": "Mauricio Cordoba",
-  "license": "ISC",
+  "private": true,
   "devDependencies": {
     "@babel/core": "^7.17.2",
     "babel-core": "^6.26.3",

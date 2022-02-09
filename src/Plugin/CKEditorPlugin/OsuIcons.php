@@ -10,7 +10,7 @@ use Drupal\editor\Entity\Editor;
  *
  * @CKEditorPlugin(
  *   id = "osu_ckeditor_plugins_osu_icons",
- *   label = @Translation("osu_ckeditor_plugins"),
+ *   label = @Translation("OSU Icons"),
  *   module = "osu_ckeditor_plugins"
  * )
  */

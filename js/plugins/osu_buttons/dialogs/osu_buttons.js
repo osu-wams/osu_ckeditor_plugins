@@ -4,7 +4,7 @@
 
     let buttonText = "Button Text";
     let buttonSize = "";
-    let buttonColor = "btn-primary";
+    let buttonColor = "osu-btn-primary";
     let buttonLink = "";
     let buttonLinkTarget = "_blank";
     let buttonHtml = "";
@@ -64,7 +64,7 @@
         buttonColor =
           e.currentTarget.className === "default"
             ? "btn"
-            : `btn-${e.currentTarget.className}`;
+            : `osu-btn-${e.currentTarget.className}`;
         $(colors).removeClass("color-active");
         $(this).addClass("color-active");
         preview();
@@ -94,23 +94,15 @@
       <div class="osu-colors">
         <label>Choose a color</label>
         <p class="primary"></p>
-        <p class="secondary"></p>
-        <p class="danger"></p>
-        <p class="warning"></p>
-        <p class="info"></p>
-        <p class="success"></p>
-        <p class="stratosphere"></p>
-        <p class="moondust"></p>
-        <p class="reindeer-moss"></p>
-        <p class="default"></p>
+        <p class="light"></p>
+        <p class="dark"></p>
       </div>
       
       <div class="button-sizes">
         <label>Choose a size</label><br/>
-        <a id="btn-mini" class="btn btn-mini">Mini</a>
-        <a id="btn-small" class="btn btn-small">Small</a>
+        <a id="btn-sm" class="btn btn-sm">Small</a>
         <a class="btn">Default</a>
-        <a id="btn-large" class="btn btn-large">Large</a>
+        <a id="btn-lg" class="btn btn-lg">Large</a>
       </div>
     </form>
     `;
@@ -166,7 +158,7 @@
 
         buttonText = "Button Text";
         buttonSize = "";
-        buttonColor = "btn-primary";
+        buttonColor = "osu-btn-primary";
         buttonLink = "";
         buttonHtml = "";
 

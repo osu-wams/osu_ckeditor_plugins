@@ -1,50 +1,23 @@
-.cke_reset_all .osu {
+.cke_reset_all .osu-orange {
   color: #d73f09;
 }
-.cke_reset_all .sand {
-  color: #e0e0e0;
+.cke_reset_all .osu-gray {
+  color: #f7f5f5;
 }
-.cke_reset_all .stratosphere {
-  color: #006a8e;
+.cke_reset_all .osu-black {
+  color: #212529;
 }
-.cke_reset_all .moondust {
-  color: #c6dae7;
-}
-.cke_reset_all .dark {
-  color: #242424;
-}
-.cke_reset_all .pine-stand {
-  color: #4A773C;
-}
-.cke_reset_all .luminance {
-  color: #FFB500;
-}
-.cke_reset_all .reindeer-moss {
-  color: #C4D6A4;
-}
-.cke_reset_all .white {
-  color: #fff;
+.cke_reset_all .osu-body {
+  color: #423E3C;
 }
 .cke_reset_all .primary {
   background-color: #d73f09;
 }
-.cke_reset_all .secondary {
-  background-color: #000;
+.cke_reset_all .light {
+  background-color: #f7f5f5;
 }
-.cke_reset_all .default {
-  background-color: #e6e6e6;
-}
-.cke_reset_all .danger {
-  background-color: #af292e;
-}
-.cke_reset_all .warning {
-  background-color: #ffb500;
-}
-.cke_reset_all .info {
-  background-color: #003b5c;
-}
-.cke_reset_all .success {
-  background-color: #4a773c;
+.cke_reset_all .dark {
+  background-color: #212529;
 }
 .cke_reset_all form.osu-buttons label {
   font-weight: bold;
@@ -54,93 +27,63 @@
   padding: 0.375rem 0.75rem;
 }
 .cke_reset_all .btn {
-  font-size: 18px;
-  line-height: 24px;
-  background-image: none;
-  background-color: #e6e6e6;
-  filter: none;
-  border-radius: 0;
-  color: #000;
-  border: 1px solid #fff;
-  padding: 0.5em 0.8em;
+  background-color: #f7f5f5;
+  border: 1px solid #f7f5f5;
+  border-radius: 50rem;
+  color: #423E3C;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0.375rem 3rem;
+  text-align: center;
   text-decoration: none;
-  box-shadow: none;
-  text-shadow: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  user-select: none;
+  vertical-align: middle;
 }
 .cke_reset_all .btn:hover, .cke_reset_all .btn:active, .cke_reset_all .btn:focus {
-  background-color: #e6e6e6;
+  background-color: #f7f5f5;
   text-decoration: underline;
 }
-.cke_reset_all .btn.btn-osu, .cke_reset_all .btn.btn-primary {
+.cke_reset_all .btn.osu-btn-primary {
   background-color: #d73f09;
-  color: #fff;
+  color: #ffffff;
 }
-.cke_reset_all .btn.btn-osu:hover, .cke_reset_all .btn.btn-osu:active, .cke_reset_all .btn.btn-osu:focus, .cke_reset_all .btn.btn-primary:hover, .cke_reset_all .btn.btn-primary:active, .cke_reset_all .btn.btn-primary:focus {
+.cke_reset_all .btn.osu-btn-primary:hover, .cke_reset_all .btn.osu-btn-primary:active, .cke_reset_all .btn.osu-btn-primary:focus {
   background-color: #d73f09;
-  color: #fff;
+  color: #ffffff;
 }
-.cke_reset_all .btn.btn-secondary {
-  background-color: #000;
-  color: #fff;
+.cke_reset_all .btn.osu-btn-light {
+  background-color: #f7f5f5;
+  color: #423E3C;
 }
-.cke_reset_all .btn.btn-secondary:hover, .cke_reset_all .btn.btn-secondary:active, .cke_reset_all .btn.btn-secondary:focus {
-  background-color: #000;
-  color: #fff;
+.cke_reset_all .btn.osu-btn-light:hover, .cke_reset_all .btn.osu-btn-light:active, .cke_reset_all .btn.osu-btn-light:focus {
+  background-color: #d73f09;
+  color: #ffffff;
 }
-.cke_reset_all .btn.btn-danger {
-  background-color: #af292e;
-  color: #fff;
+.cke_reset_all .btn.osu-btn-dark {
+  background-color: #212529;
+  color: #ffffff;
 }
-.cke_reset_all .btn.btn-danger:hover, .cke_reset_all .btn.btn-danger:active, .cke_reset_all .btn.btn-danger:focus {
-  background-color: #af292e;
-  color: #fff;
+.cke_reset_all .btn.osu-btn-dark:hover, .cke_reset_all .btn.osu-btn-dark:active, .cke_reset_all .btn.osu-btn-dark:focus {
+  background-color: #d73f09;
+  color: #ffffff;
 }
-.cke_reset_all .btn.btn-pine-stand, .cke_reset_all .btn.btn-success {
-  background-color: #4a773c;
-  color: #fff;
+.cke_reset_all .btn-sm {
+  padding: 0.25rem 3rem;
+  font-size: 0.875rem;
+  border-radius: 50rem;
 }
-.cke_reset_all .btn.btn-pine-stand:hover, .cke_reset_all .btn.btn-pine-stand:active, .cke_reset_all .btn.btn-pine-stand:focus, .cke_reset_all .btn.btn-success:hover, .cke_reset_all .btn.btn-success:active, .cke_reset_all .btn.btn-success:focus {
-  background-color: #4a773c;
-  color: #fff;
-}
-.cke_reset_all .btn.btn-luminance, .cke_reset_all .btn.btn-warning {
-  background-color: #ffb500;
-  color: #000;
-}
-.cke_reset_all .btn.btn-luminance:hover, .cke_reset_all .btn.btn-luminance:active, .cke_reset_all .btn.btn-luminance:focus, .cke_reset_all .btn.btn-warning:hover, .cke_reset_all .btn.btn-warning:active, .cke_reset_all .btn.btn-warning:focus {
-  background-color: #ffb500;
-  color: #000;
-}
-.cke_reset_all .btn.btn-info {
-  background-color: #003b5c;
-  color: #fff;
-}
-.cke_reset_all .btn.btn-info:hover, .cke_reset_all .btn.btn-info:active, .cke_reset_all .btn.btn-info:focus {
-  background-color: #003b5c;
-  color: #fff;
-}
-.cke_reset_all .btn.btn-stratosphere {
-  background-color: #006a8e !important;
-  color: #fff !important;
-}
-.cke_reset_all .btn.btn-moondust {
-  background-color: #c6dae7 !important;
-}
-.cke_reset_all .btn.btn-reindeer-moss {
-  background-color: #c4d6a4 !important;
-}
-.cke_reset_all .btn-mini {
-  font-size: 13.5px;
-}
-.cke_reset_all .btn-small {
-  font-size: 15.6px;
-}
-.cke_reset_all .btn-large {
-  font-size: 22px;
+.cke_reset_all .btn-lg {
+  padding: 0.5rem 3rem;
+  font-size: 1.25rem;
+  border-radius: 50rem;
 }
 .cke_reset_all #selected-button {
-  position: relative;
   float: right;
+  position: relative;
 }
 .cke_reset_all .button-sizes a {
   cursor: pointer;
@@ -154,92 +97,61 @@
 }
 
 .btn {
-  font-size: 18px;
-  line-height: 24px;
-  background-image: none;
-  background-color: #e6e6e6;
-  filter: none;
-  border-radius: 0;
-  color: #000;
-  border: 1px solid #fff;
-  padding: 0.5em 0.8em;
+  background-color: #f7f5f5;
+  border: 1px solid #f7f5f5;
+  border-radius: 50rem;
+  color: #423E3C;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0.375rem 3rem;
+  text-align: center;
   text-decoration: none;
-  box-shadow: none;
-  text-shadow: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  user-select: none;
+  vertical-align: middle;
 }
 .btn:hover, .btn:active, .btn:focus {
-  background-color: #e6e6e6;
+  background-color: #f7f5f5;
   text-decoration: underline;
 }
-.btn.btn-osu, .btn.btn-primary {
+.btn.osu-btn-primary {
   background-color: #d73f09;
-  color: #fff;
+  color: #ffffff;
 }
-.btn.btn-osu:hover, .btn.btn-osu:active, .btn.btn-osu:focus, .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
+.btn.osu-btn-primary:hover, .btn.osu-btn-primary:active, .btn.osu-btn-primary:focus {
   background-color: #d73f09;
-  color: #fff;
+  color: #ffffff;
 }
-.btn.btn-secondary {
-  background-color: #000;
-  color: #fff;
+.btn.osu-btn-light {
+  background-color: #f7f5f5;
+  color: #423E3C;
 }
-.btn.btn-secondary:hover, .btn.btn-secondary:active, .btn.btn-secondary:focus {
-  background-color: #000;
-  color: #fff;
+.btn.osu-btn-light:hover, .btn.osu-btn-light:active, .btn.osu-btn-light:focus {
+  background-color: #d73f09;
+  color: #ffffff;
 }
-.btn.btn-danger {
-  background-color: #af292e;
-  color: #fff;
+.btn.osu-btn-dark {
+  background-color: #212529;
+  color: #ffffff;
 }
-.btn.btn-danger:hover, .btn.btn-danger:active, .btn.btn-danger:focus {
-  background-color: #af292e;
-  color: #fff;
-}
-.btn.btn-pine-stand, .btn.btn-success {
-  background-color: #4a773c;
-  color: #fff;
-}
-.btn.btn-pine-stand:hover, .btn.btn-pine-stand:active, .btn.btn-pine-stand:focus, .btn.btn-success:hover, .btn.btn-success:active, .btn.btn-success:focus {
-  background-color: #4a773c;
-  color: #fff;
-}
-.btn.btn-luminance, .btn.btn-warning {
-  background-color: #ffb500;
-  color: #000;
-}
-.btn.btn-luminance:hover, .btn.btn-luminance:active, .btn.btn-luminance:focus, .btn.btn-warning:hover, .btn.btn-warning:active, .btn.btn-warning:focus {
-  background-color: #ffb500;
-  color: #000;
-}
-.btn.btn-info {
-  background-color: #003b5c;
-  color: #fff;
-}
-.btn.btn-info:hover, .btn.btn-info:active, .btn.btn-info:focus {
-  background-color: #003b5c;
-  color: #fff;
-}
-.btn.btn-stratosphere {
-  background-color: #006a8e !important;
-  color: #fff !important;
-}
-.btn.btn-moondust {
-  background-color: #c6dae7 !important;
-}
-.btn.btn-reindeer-moss {
-  background-color: #c4d6a4 !important;
+.btn.osu-btn-dark:hover, .btn.osu-btn-dark:active, .btn.osu-btn-dark:focus {
+  background-color: #d73f09;
+  color: #ffffff;
 }
 
-.btn-mini {
-  font-size: 13.5px;
+.btn-sm {
+  padding: 0.25rem 3rem;
+  font-size: 0.875rem;
+  border-radius: 50rem;
 }
 
-.btn-small {
-  font-size: 15.6px;
-}
-
-.btn-large {
-  font-size: 22px;
+.btn-lg {
+  padding: 0.5rem 3rem;
+  font-size: 1.25rem;
+  border-radius: 50rem;
 }
 
 .cke_reset_all .osu-buttons-tabs {

@@ -1,80 +1,38 @@
 $osu: #d73f09;
-$link: #006A8E;
-$sand: #e0e0e0;
-$electric-beav: #ffaa4d;
-$pine-stand: #4a773c;
-$reindeer-moss: #c4d6a4;
-$hop-bine: #aa9d2e;
-$till: #b7a99a;
-$high-tide: #00859b;
-$seafoam: #b8dde1;
-$rogue-wave: #0d5257;
-$coastline: #a7aca2;
-$luminance: #ffb500;
-$candela: #fdd26e;
-$solar-flare: #d3832b;
-$high-desert: #7a6855;
-$stratosphere: #006a8e;
-$moondust: #c6dae7;
-$star-canvas: #003b5c;
-$crater: #8e9089;
-$lava: #af292e;
-$vulcan: #e69198;
-$basalt: #5e131a;
-$ash: #e6e6e6;
-$white: #fff;
+$neutral-100: #f7f5f5;
+$paddletailblack: #212529;
+$bucktoothwhite: #ffffff;
+$body: #423E3C;
 
 // CKE-specific styles - Must be duplicated outside of .cke_reset_all to work outside of edit mode
 .cke_reset_all {
   // Color choice boxes
-  .osu {
+  .osu-orange {
     color: #d73f09;
   }
-  .sand {
-    color: #e0e0e0;
+
+  .osu-gray {
+    color: #f7f5f5;
   }
-  .stratosphere {
-    color: #006a8e;
+
+  .osu-black {
+    color: #212529;
   }
-  .moondust {
-    color: #c6dae7;
+
+  .osu-body {
+    color: $body;
   }
-  .dark {
-    color: #242424;
-  }
-  .pine-stand {
-    color: #4A773C;
-  }
-  .luminance {
-    color: #FFB500;
-  }
-  .reindeer-moss {
-    color: #C4D6A4;
-  }
-  .white {
-    color: #fff;
-  }
-  
+
   .primary {
     background-color: $osu;
   }
-  .secondary {
-    background-color: #000;
+
+  .light {
+    background-color: $neutral-100;
   }
-  .default {
-    background-color: $ash;
-  }
-  .danger {
-    background-color: $lava;
-  }
-  .warning {
-    background-color: $luminance;
-  }
-  .info {
-    background-color: $star-canvas;
-  }
-  .success {
-    background-color: $pine-stand;
+
+  .dark {
+    background-color: $paddletailblack;
   }
 
   form.osu-buttons {
@@ -90,97 +48,74 @@ $white: #fff;
 
   // Button Styles
   .btn {
-    font-size: 18px;
-    line-height: 24px;
-    background-image: none;
-    background-color: $ash;
-    filter: none;
-    border-radius: 0;
-    color: #000;
-    border: 1px solid #fff;
-    padding: .5em .8em;
+    background-color: $neutral-100;
+    border: 1px solid $neutral-100;
+    border-radius: 50rem;
+    color: $body;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 3rem;
+    text-align: center;
     text-decoration: none;
-    box-shadow: none;
-    text-shadow: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    user-select: none;
+    vertical-align: middle;
+
     &:hover, &:active, &:focus {
-      background-color: $ash;
+      background-color: $neutral-100;
       text-decoration: underline;
     }
 
-    &.btn-osu, &.btn-primary {
+    &.osu-btn-primary {
       background-color: $osu;
-      color: #fff;
+      color: $bucktoothwhite;
+
       &:hover, &:active, &:focus {
         background-color: $osu;
-        color: #fff;
+        color: $bucktoothwhite;
       }
     }
-    &.btn-secondary {
-      background-color: #000;
-      color: #fff;
+
+    &.osu-btn-light {
+      background-color: $neutral-100;
+      color: $body;
+
       &:hover, &:active, &:focus {
-        background-color: #000;
-        color: #fff;
+        background-color: $osu;
+        color: $bucktoothwhite;
       }
     }
-    &.btn-danger {
-      background-color: $lava;
-      color: #fff;
+
+    &.osu-btn-dark {
+      background-color: $paddletailblack;
+      color: $bucktoothwhite;
+
       &:hover, &:active, &:focus {
-        background-color: $lava;
-        color: #fff;
+        background-color: $osu;
+        color: $bucktoothwhite;
       }
     }
-    &.btn-pine-stand, &.btn-success {
-      background-color: $pine-stand;
-      color: #fff;
-      &:hover, &:active, &:focus {
-        background-color: $pine-stand;
-        color: #fff;
-      }
-    }
-    &.btn-luminance, &.btn-warning {
-      background-color: $luminance;
-      color: #000;
-      &:hover, &:active, &:focus {
-        background-color: $luminance;
-        color: #000;
-      }
-    }
-    &.btn-info {
-      background-color: $star-canvas;
-      color: #fff;
-      &:hover, &:active, &:focus {
-        background-color: $star-canvas;
-        color: #fff;
-      }
-    }
-    // !important require to override pine, since these colours do not exist in the theme
-    &.btn-stratosphere {
-      background-color: #006a8e !important;
-      color: #fff !important;
-    }
-    &.btn-moondust {
-      background-color: #c6dae7 !important;
-    }
-    &.btn-reindeer-moss {
-      background-color: #c4d6a4 !important;
-    }
+
   }
 
-  .btn-mini {
-    font-size: 13.5px;
+  .btn-sm {
+    padding: 0.25rem 3rem;
+    font-size: 0.875rem;
+    border-radius: 50rem;
   }
-  .btn-small {
-    font-size: 15.6px;
-  }
-  .btn-large {
-    font-size: 22px;
+
+  .btn-lg {
+    padding: 0.5rem 3rem;
+    font-size: 1.25rem;
+    border-radius: 50rem;
   }
 
   #selected-button {
-    position: relative;
     float: right;
+    position: relative;
   }
 
   .button-sizes a {
@@ -202,91 +137,68 @@ $white: #fff;
 }
 
 .btn {
-  font-size: 18px;
-  line-height: 24px;
-  background-image: none;
-  background-color: $ash;
-  filter: none;
-  border-radius: 0;
-  color: #000;
-  border: 1px solid #fff;
-  padding: .5em .8em;
+  background-color: $neutral-100;
+  border: 1px solid $neutral-100;
+  border-radius: 50rem;
+  color: $body;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0.375rem 3rem;
+  text-align: center;
   text-decoration: none;
-  box-shadow: none;
-  text-shadow: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  user-select: none;
+  vertical-align: middle;
+
   &:hover, &:active, &:focus {
-    background-color: $ash;
+    background-color: $neutral-100;
     text-decoration: underline;
   }
 
-  &.btn-osu, &.btn-primary {
+  &.osu-btn-primary {
     background-color: $osu;
-    color: #fff;
+    color: $bucktoothwhite;
+
     &:hover, &:active, &:focus {
       background-color: $osu;
-      color: #fff;
+      color: $bucktoothwhite;
     }
   }
-  &.btn-secondary {
-    background-color: #000;
-    color: #fff;
+
+  &.osu-btn-light {
+    background-color: $neutral-100;
+    color: $body;
+
     &:hover, &:active, &:focus {
-      background-color: #000;
-      color: #fff;
+      background-color: $osu;
+      color: $bucktoothwhite;
     }
   }
-  &.btn-danger {
-    background-color: $lava;
-    color: #fff;
+
+  &.osu-btn-dark {
+    background-color: $paddletailblack;
+    color: $bucktoothwhite;
+
     &:hover, &:active, &:focus {
-      background-color: $lava;
-      color: #fff;
+      background-color: $osu;
+      color: $bucktoothwhite;
     }
-  }
-  &.btn-pine-stand, &.btn-success {
-    background-color: $pine-stand;
-    color: #fff;
-    &:hover, &:active, &:focus {
-      background-color: $pine-stand;
-      color: #fff;
-    }
-  }
-  &.btn-luminance, &.btn-warning {
-    background-color: $luminance;
-    color: #000;
-    &:hover, &:active, &:focus {
-      background-color: $luminance;
-      color: #000;
-    }
-  }
-  &.btn-info {
-    background-color: $star-canvas;
-    color: #fff;
-    &:hover, &:active, &:focus {
-      background-color: $star-canvas;
-      color: #fff;
-    }
-  }
-  &.btn-stratosphere {
-    background-color: #006a8e !important;
-    color: #fff !important;
-  }
-  &.btn-moondust {
-    background-color: #c6dae7 !important;
-  }
-  &.btn-reindeer-moss {
-    background-color: #c4d6a4 !important;
   }
 }
 
-.btn-mini {
-  font-size: 13.5px;
+.btn-sm {
+  padding: 0.25rem 3rem;
+  font-size: 0.875rem;
+  border-radius: 50rem;
 }
-.btn-small {
-  font-size: 15.6px;
-}
-.btn-large {
-  font-size: 22px;
+
+.btn-lg {
+  padding: 0.5rem 3rem;
+  font-size: 1.25rem;
+  border-radius: 50rem;
 }
 
 @import 'osu_tab_interface';

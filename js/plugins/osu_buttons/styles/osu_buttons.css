@@ -1,23 +1,29 @@
-.cke_reset_all .osu-orange {
-  color: #d73f09;
-}
-.cke_reset_all .osu-gray {
-  color: #f7f5f5;
-}
-.cke_reset_all .osu-black {
-  color: #212529;
-}
-.cke_reset_all .osu-body {
+.cke_reset_all .osu-buttons .osu-body {
   color: #423E3C;
 }
-.cke_reset_all .primary {
+.cke_reset_all .osu-buttons .primary {
   background-color: #d73f09;
 }
-.cke_reset_all .light {
+.cke_reset_all .osu-buttons .light {
   background-color: #f7f5f5;
 }
-.cke_reset_all .dark {
+.cke_reset_all .osu-buttons .dark {
   background-color: #212529;
+}
+.cke_reset_all .osu-buttons .white {
+  background-color: #ffffff;
+}
+.cke_reset_all .osu-buttons .pine {
+  background-color: #4a773c;
+}
+.cke_reset_all .osu-buttons .luminance {
+  background-color: #ffb500;
+}
+.cke_reset_all .osu-buttons .rogue-wave {
+  background-color: #00859b;
+}
+.cke_reset_all .osu-buttons .stratosphere {
+  background-color: #006a8e;
 }
 .cke_reset_all form.osu-buttons label {
   font-weight: bold;
@@ -71,15 +77,50 @@
   background-color: #d73f09;
   color: #ffffff;
 }
+.cke_reset_all .btn.osu-btn-white {
+  background-color: #ffffff;
+  color: #423E3C;
+}
+.cke_reset_all .btn.osu-btn-white:hover, .cke_reset_all .btn.osu-btn-white:active, .cke_reset_all .btn.osu-btn-white:focus {
+  background-color: white;
+}
+.cke_reset_all .btn.osu-btn-pine {
+  background-color: #4a773c;
+  color: #ffffff;
+}
+.cke_reset_all .btn.osu-btn-pine:hover, .cke_reset_all .btn.osu-btn-pine:active, .cke_reset_all .btn.osu-btn-pine:focus {
+  background-color: #3f6533;
+}
+.cke_reset_all .btn.osu-btn-luminance {
+  background-color: #ffb500;
+  color: #423E3C;
+}
+.cke_reset_all .btn.osu-btn-luminance:hover, .cke_reset_all .btn.osu-btn-luminance:active, .cke_reset_all .btn.osu-btn-luminance:focus {
+  background-color: #ffc026;
+}
+.cke_reset_all .btn.osu-btn-rogue-wave {
+  background-color: #00859b;
+  color: #423E3C;
+}
+.cke_reset_all .btn.osu-btn-rogue-wave:hover, .cke_reset_all .btn.osu-btn-rogue-wave:active, .cke_reset_all .btn.osu-btn-rogue-wave:focus {
+  background-color: #2697aa;
+}
+.cke_reset_all .btn.osu-btn-stratosphere {
+  background-color: #006a8e;
+  color: #ffffff;
+}
+.cke_reset_all .btn.osu-btn-stratosphere:hover, .cke_reset_all .btn.osu-btn-stratosphere:active, .cke_reset_all .btn.osu-btn-stratosphere:focus {
+  background-color: #005a79;
+}
 .cke_reset_all .btn-sm {
-  padding: 0.25rem 3rem;
-  font-size: 0.875rem;
   border-radius: 50rem;
+  font-size: 0.875rem;
+  padding: 0.25rem 3rem;
 }
 .cke_reset_all .btn-lg {
-  padding: 0.5rem 3rem;
-  font-size: 1.25rem;
   border-radius: 50rem;
+  font-size: 1.25rem;
+  padding: 0.5rem 3rem;
 }
 .cke_reset_all #selected-button {
   float: right;
@@ -141,17 +182,52 @@
   background-color: #d73f09;
   color: #ffffff;
 }
+.btn.osu-btn-white {
+  background-color: #ffffff;
+  color: #423E3C;
+}
+.btn.osu-btn-white:hover, .btn.osu-btn-white:active, .btn.osu-btn-white:focus {
+  background-color: white;
+}
+.btn.osu-btn-pine {
+  background-color: #4a773c;
+  color: #ffffff;
+}
+.btn.osu-btn-pine:hover, .btn.osu-btn-pine:active, .btn.osu-btn-pine:focus {
+  background-color: #3f6533;
+}
+.btn.osu-btn-luminance {
+  background-color: #ffb500;
+  color: #423E3C;
+}
+.btn.osu-btn-luminance:hover, .btn.osu-btn-luminance:active, .btn.osu-btn-luminance:focus {
+  background-color: #ffc026;
+}
+.btn.osu-btn-rogue-wave {
+  background-color: #00859b;
+  color: #423E3C;
+}
+.btn.osu-btn-rogue-wave:hover, .btn.osu-btn-rogue-wave:active, .btn.osu-btn-rogue-wave:focus {
+  background-color: #2697aa;
+}
+.btn.osu-btn-stratosphere {
+  background-color: #006a8e;
+  color: #ffffff;
+}
+.btn.osu-btn-stratosphere:hover, .btn.osu-btn-stratosphere:active, .btn.osu-btn-stratosphere:focus {
+  background-color: #005a79;
+}
 
 .btn-sm {
-  padding: 0.25rem 3rem;
-  font-size: 0.875rem;
   border-radius: 50rem;
+  font-size: 0.875rem;
+  padding: 0.25rem 3rem;
 }
 
 .btn-lg {
-  padding: 0.5rem 3rem;
-  font-size: 1.25rem;
   border-radius: 50rem;
+  font-size: 1.25rem;
+  padding: 0.5rem 3rem;
 }
 
 .cke_reset_all .osu-buttons-tabs {

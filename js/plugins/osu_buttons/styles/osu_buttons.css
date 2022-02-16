@@ -100,7 +100,7 @@
 }
 .cke_reset_all .btn.osu-btn-rogue-wave {
   background-color: #00859b;
-  color: #423E3C;
+  color: #000;
 }
 .cke_reset_all .btn.osu-btn-rogue-wave:hover, .cke_reset_all .btn.osu-btn-rogue-wave:active, .cke_reset_all .btn.osu-btn-rogue-wave:focus {
   background-color: #2697aa;
@@ -205,7 +205,7 @@
 }
 .btn.osu-btn-rogue-wave {
   background-color: #00859b;
-  color: #423E3C;
+  color: #000;
 }
 .btn.osu-btn-rogue-wave:hover, .btn.osu-btn-rogue-wave:active, .btn.osu-btn-rogue-wave:focus {
   background-color: #2697aa;

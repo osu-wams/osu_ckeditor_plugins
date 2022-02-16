@@ -142,7 +142,7 @@ $body: #423E3C;
 
     &.osu-btn-rogue-wave {
       background-color: $rogue_wave;
-      color: $body;
+      color: #000;
 
       &:hover, &:active, &:focus {
         background-color: mix(white, $rogue_wave, 15%);
@@ -258,7 +258,7 @@ $body: #423E3C;
   &.osu-btn-pine {
     background-color: $pine;
     color: $bucktoothwhite;
-    //darker
+
     &:hover, &:active, &:focus {
       background-color: mix(black, $pine, 15%);
     }
@@ -267,7 +267,7 @@ $body: #423E3C;
   &.osu-btn-luminance {
     background-color: $luminance;
     color: $body;
-    //lighter
+
     &:hover, &:active, &:focus {
       background-color: mix(white, $luminance, 15%);
     }
@@ -275,8 +275,8 @@ $body: #423E3C;
 
   &.osu-btn-rogue-wave {
     background-color: $rogue_wave;
-    color: $body;
-    // lighter
+    color: #000;
+
     &:hover, &:active, &:focus {
       background-color: mix(white, $rogue_wave, 15%);
     }
@@ -285,7 +285,7 @@ $body: #423E3C;
   &.osu-btn-stratosphere {
     background-color: $stratosphere;
     color: $bucktoothwhite;
-    // darker
+
     &:hover, &:active, &:focus {
       background-color: mix(black, $stratosphere, 15%);
     }

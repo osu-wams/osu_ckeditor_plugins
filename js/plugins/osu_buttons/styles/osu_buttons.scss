@@ -2,37 +2,51 @@ $osu: #d73f09;
 $neutral-100: #f7f5f5;
 $paddletailblack: #212529;
 $bucktoothwhite: #ffffff;
+$pine: #4a773c;
+$luminance: #ffb500;
+$rogue_wave: #00859b;
+$stratosphere: #006a8e;
 $body: #423E3C;
 
 // CKE-specific styles - Must be duplicated outside of .cke_reset_all to work outside of edit mode
 .cke_reset_all {
-  // Color choice boxes
-  .osu-orange {
-    color: #d73f09;
-  }
+  .osu-buttons {
+    // Color choice boxes
+    .osu-body {
+      color: $body;
+    }
 
-  .osu-gray {
-    color: #f7f5f5;
-  }
+    .primary {
+      background-color: $osu;
+    }
 
-  .osu-black {
-    color: #212529;
-  }
+    .light {
+      background-color: $neutral-100;
+    }
 
-  .osu-body {
-    color: $body;
-  }
+    .dark {
+      background-color: $paddletailblack;
+    }
 
-  .primary {
-    background-color: $osu;
-  }
+    .white {
+      background-color: $bucktoothwhite;
+    }
 
-  .light {
-    background-color: $neutral-100;
-  }
+    .pine {
+      background-color: $pine;
+    }
 
-  .dark {
-    background-color: $paddletailblack;
+    .luminance {
+      background-color: $luminance;
+    }
+
+    .rogue-wave {
+      background-color: $rogue_wave;
+    }
+
+    .stratosphere {
+      background-color: $stratosphere;
+    }
   }
 
   form.osu-buttons {
@@ -99,18 +113,62 @@ $body: #423E3C;
       }
     }
 
+    &.osu-btn-white {
+      background-color: $bucktoothwhite;
+      color: $body;
+
+      &:hover, &:active, &:focus {
+        background-color: mix(white, $bucktoothwhite, 15%);
+      }
+    }
+
+    &.osu-btn-pine {
+      background-color: $pine;
+      color: $bucktoothwhite;
+
+      &:hover, &:active, &:focus {
+        background-color: mix(black, $pine, 15%);
+      }
+    }
+
+    &.osu-btn-luminance {
+      background-color: $luminance;
+      color: $body;
+
+      &:hover, &:active, &:focus {
+        background-color: mix(white, $luminance, 15%);
+      }
+    }
+
+    &.osu-btn-rogue-wave {
+      background-color: $rogue_wave;
+      color: $body;
+
+      &:hover, &:active, &:focus {
+        background-color: mix(white, $rogue_wave, 15%);
+      }
+    }
+
+    &.osu-btn-stratosphere {
+      background-color: $stratosphere;
+      color: $bucktoothwhite;
+
+      &:hover, &:active, &:focus {
+        background-color: mix(black, $stratosphere, 15%);
+      }
+    }
   }
 
   .btn-sm {
-    padding: 0.25rem 3rem;
-    font-size: 0.875rem;
     border-radius: 50rem;
+    font-size: 0.875rem;
+    padding: 0.25rem 3rem;
   }
 
   .btn-lg {
-    padding: 0.5rem 3rem;
-    font-size: 1.25rem;
     border-radius: 50rem;
+    font-size: 1.25rem;
+    padding: 0.5rem 3rem;
   }
 
   #selected-button {
@@ -187,18 +245,63 @@ $body: #423E3C;
       color: $bucktoothwhite;
     }
   }
+
+  &.osu-btn-white {
+    background-color: $bucktoothwhite;
+    color: $body;
+
+    &:hover, &:active, &:focus {
+      background-color: mix(white, $bucktoothwhite, 15%);
+    }
+  }
+
+  &.osu-btn-pine {
+    background-color: $pine;
+    color: $bucktoothwhite;
+    //darker
+    &:hover, &:active, &:focus {
+      background-color: mix(black, $pine, 15%);
+    }
+  }
+
+  &.osu-btn-luminance {
+    background-color: $luminance;
+    color: $body;
+    //lighter
+    &:hover, &:active, &:focus {
+      background-color: mix(white, $luminance, 15%);
+    }
+  }
+
+  &.osu-btn-rogue-wave {
+    background-color: $rogue_wave;
+    color: $body;
+    // lighter
+    &:hover, &:active, &:focus {
+      background-color: mix(white, $rogue_wave, 15%);
+    }
+  }
+
+  &.osu-btn-stratosphere {
+    background-color: $stratosphere;
+    color: $bucktoothwhite;
+    // darker
+    &:hover, &:active, &:focus {
+      background-color: mix(black, $stratosphere, 15%);
+    }
+  }
 }
 
 .btn-sm {
-  padding: 0.25rem 3rem;
-  font-size: 0.875rem;
   border-radius: 50rem;
+  font-size: 0.875rem;
+  padding: 0.25rem 3rem;
 }
 
 .btn-lg {
-  padding: 0.5rem 3rem;
-  font-size: 1.25rem;
   border-radius: 50rem;
+  font-size: 1.25rem;
+  padding: 0.5rem 3rem;
 }
 
 @import 'osu_tab_interface';

@@ -191,15 +191,14 @@ CKEDITOR.dialog.add("osu_iconsDialog", function(editor) {
     
     <div class="osu-colors">
         <label>Click on a color <input id="osu-icon-color" type="text" value="osu" readonly/></label>
-        <p class="osu color-active"></p>
+        <p class="primary color-active"></p>
+        <p class="light"></p>
         <p class="dark"></p>
-        <p class="sand"></p>
-        <p class="stratosphere"></p>
-        <p class="moondust"></p>
-        <p class="pine-stand"></p>
         <p class="white"></p>
+        <p class="pine"></p>
         <p class="luminance"></p>
-        <p class="reindeer-moss"></p>
+        <p class="rogue-wave"></p>
+        <p class="stratosphere"></p>
     </div>
     
     <div class="osu-sizes">

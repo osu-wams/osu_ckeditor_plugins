@@ -96,6 +96,11 @@
         <p class="primary"></p>
         <p class="light"></p>
         <p class="dark"></p>
+        <p class="white"></p>
+        <p class="pine"></p>
+        <p class="luminance"></p>
+        <p class="rogue-wave"></p>
+        <p class="stratosphere"></p>
       </div>
       
       <div class="button-sizes">

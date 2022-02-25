@@ -4,7 +4,7 @@ CKEDITOR.dialog.add("osu_iconsDialog", function(editor) {
   const e_class = `.${CKEDITOR.currentInstance.name}`;
 
   let icon_size = "fa-3x";
-  let icon_color = "osu";
+  let icon_color = "primary";
   let icon_chosen = "";
 
   // we use this function to wrap our on keyup code for triggering the filter of font awesome icons

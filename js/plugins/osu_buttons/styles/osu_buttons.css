@@ -55,37 +55,46 @@
 }
 .cke_reset_all .btn.osu-btn-primary {
   background-color: #d73f09;
+  border-color: #d73f09;
   color: #ffffff;
 }
 .cke_reset_all .btn.osu-btn-primary:hover, .cke_reset_all .btn.osu-btn-primary:active, .cke_reset_all .btn.osu-btn-primary:focus {
   background-color: #d73f09;
+  border-color: #212529;
   color: #ffffff;
 }
 .cke_reset_all .btn.osu-btn-light {
   background-color: #f7f5f5;
+  border-color: #212529;
   color: #423E3C;
 }
 .cke_reset_all .btn.osu-btn-light:hover, .cke_reset_all .btn.osu-btn-light:active, .cke_reset_all .btn.osu-btn-light:focus {
   background-color: #d73f09;
+  border-color: #d73f09;
   color: #ffffff;
 }
 .cke_reset_all .btn.osu-btn-dark {
   background-color: #212529;
+  border-color: #212529;
   color: #ffffff;
 }
 .cke_reset_all .btn.osu-btn-dark:hover, .cke_reset_all .btn.osu-btn-dark:active, .cke_reset_all .btn.osu-btn-dark:focus {
   background-color: #d73f09;
+  border-color: #d73f09;
   color: #ffffff;
 }
 .cke_reset_all .btn.osu-btn-white {
   background-color: #ffffff;
+  border-color: #212529;
   color: #423E3C;
 }
 .cke_reset_all .btn.osu-btn-white:hover, .cke_reset_all .btn.osu-btn-white:active, .cke_reset_all .btn.osu-btn-white:focus {
   background-color: white;
+  border-color: #d73f09;
 }
 .cke_reset_all .btn.osu-btn-pine {
   background-color: #4a773c;
+  border-color: #4a773c;
   color: #ffffff;
 }
 .cke_reset_all .btn.osu-btn-pine:hover, .cke_reset_all .btn.osu-btn-pine:active, .cke_reset_all .btn.osu-btn-pine:focus {
@@ -93,6 +102,7 @@
 }
 .cke_reset_all .btn.osu-btn-luminance {
   background-color: #ffb500;
+  border-color: #ffb500;
   color: #423E3C;
 }
 .cke_reset_all .btn.osu-btn-luminance:hover, .cke_reset_all .btn.osu-btn-luminance:active, .cke_reset_all .btn.osu-btn-luminance:focus {
@@ -100,6 +110,7 @@
 }
 .cke_reset_all .btn.osu-btn-rogue-wave {
   background-color: #00859b;
+  border-color: #00859b;
   color: #000;
 }
 .cke_reset_all .btn.osu-btn-rogue-wave:hover, .cke_reset_all .btn.osu-btn-rogue-wave:active, .cke_reset_all .btn.osu-btn-rogue-wave:focus {
@@ -107,6 +118,7 @@
 }
 .cke_reset_all .btn.osu-btn-stratosphere {
   background-color: #006a8e;
+  border-color: #006a8e;
   color: #ffffff;
 }
 .cke_reset_all .btn.osu-btn-stratosphere:hover, .cke_reset_all .btn.osu-btn-stratosphere:active, .cke_reset_all .btn.osu-btn-stratosphere:focus {
@@ -160,37 +172,46 @@
 }
 .btn.osu-btn-primary {
   background-color: #d73f09;
+  border-color: #d73f09;
   color: #ffffff;
 }
 .btn.osu-btn-primary:hover, .btn.osu-btn-primary:active, .btn.osu-btn-primary:focus {
   background-color: #d73f09;
+  border-color: #212529;
   color: #ffffff;
 }
 .btn.osu-btn-light {
   background-color: #f7f5f5;
+  border-color: #212529;
   color: #423E3C;
 }
 .btn.osu-btn-light:hover, .btn.osu-btn-light:active, .btn.osu-btn-light:focus {
   background-color: #d73f09;
+  border-color: #d73f09;
   color: #ffffff;
 }
 .btn.osu-btn-dark {
   background-color: #212529;
+  border-color: #212529;
   color: #ffffff;
 }
 .btn.osu-btn-dark:hover, .btn.osu-btn-dark:active, .btn.osu-btn-dark:focus {
   background-color: #d73f09;
+  border-color: #d73f09;
   color: #ffffff;
 }
 .btn.osu-btn-white {
   background-color: #ffffff;
+  border-color: #212529;
   color: #423E3C;
 }
 .btn.osu-btn-white:hover, .btn.osu-btn-white:active, .btn.osu-btn-white:focus {
   background-color: white;
+  border-color: #d73f09;
 }
 .btn.osu-btn-pine {
   background-color: #4a773c;
+  border-color: #4a773c;
   color: #ffffff;
 }
 .btn.osu-btn-pine:hover, .btn.osu-btn-pine:active, .btn.osu-btn-pine:focus {
@@ -198,6 +219,7 @@
 }
 .btn.osu-btn-luminance {
   background-color: #ffb500;
+  border-color: #ffb500;
   color: #423E3C;
 }
 .btn.osu-btn-luminance:hover, .btn.osu-btn-luminance:active, .btn.osu-btn-luminance:focus {
@@ -205,6 +227,7 @@
 }
 .btn.osu-btn-rogue-wave {
   background-color: #00859b;
+  border-color: #00859b;
   color: #000;
 }
 .btn.osu-btn-rogue-wave:hover, .btn.osu-btn-rogue-wave:active, .btn.osu-btn-rogue-wave:focus {
@@ -212,6 +235,7 @@
 }
 .btn.osu-btn-stratosphere {
   background-color: #006a8e;
+  border-color: #006a8e;
   color: #ffffff;
 }
 .btn.osu-btn-stratosphere:hover, .btn.osu-btn-stratosphere:active, .btn.osu-btn-stratosphere:focus {

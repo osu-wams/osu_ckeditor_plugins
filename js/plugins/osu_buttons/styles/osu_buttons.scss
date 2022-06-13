@@ -85,45 +85,54 @@ $body: #423E3C;
 
     &.osu-btn-primary {
       background-color: $osu;
+      border-color: $osu;
       color: $bucktoothwhite;
 
       &:hover, &:active, &:focus {
         background-color: $osu;
+        border-color: $paddletailblack;
         color: $bucktoothwhite;
       }
     }
 
     &.osu-btn-light {
       background-color: $neutral-100;
+      border-color: $paddletailblack;
       color: $body;
 
       &:hover, &:active, &:focus {
         background-color: $osu;
+        border-color: $osu;
         color: $bucktoothwhite;
       }
     }
 
     &.osu-btn-dark {
       background-color: $paddletailblack;
+      border-color: $paddletailblack;
       color: $bucktoothwhite;
 
       &:hover, &:active, &:focus {
         background-color: $osu;
+        border-color: $osu;
         color: $bucktoothwhite;
       }
     }
 
     &.osu-btn-white {
       background-color: $bucktoothwhite;
+      border-color: $paddletailblack;
       color: $body;
 
       &:hover, &:active, &:focus {
         background-color: mix(white, $bucktoothwhite, 15%);
+        border-color: $osu;
       }
     }
 
     &.osu-btn-pine {
       background-color: $pine;
+      border-color: $pine;
       color: $bucktoothwhite;
 
       &:hover, &:active, &:focus {
@@ -133,6 +142,7 @@ $body: #423E3C;
 
     &.osu-btn-luminance {
       background-color: $luminance;
+      border-color: $luminance;
       color: $body;
 
       &:hover, &:active, &:focus {
@@ -142,6 +152,7 @@ $body: #423E3C;
 
     &.osu-btn-rogue-wave {
       background-color: $rogue_wave;
+      border-color: $rogue_wave;
       color: #000;
 
       &:hover, &:active, &:focus {
@@ -151,6 +162,7 @@ $body: #423E3C;
 
     &.osu-btn-stratosphere {
       background-color: $stratosphere;
+      border-color: $stratosphere;
       color: $bucktoothwhite;
 
       &:hover, &:active, &:focus {
@@ -218,45 +230,54 @@ $body: #423E3C;
 
   &.osu-btn-primary {
     background-color: $osu;
+    border-color: $osu;
     color: $bucktoothwhite;
 
     &:hover, &:active, &:focus {
       background-color: $osu;
+      border-color: $paddletailblack;
       color: $bucktoothwhite;
     }
   }
 
   &.osu-btn-light {
     background-color: $neutral-100;
+    border-color: $paddletailblack;
     color: $body;
 
     &:hover, &:active, &:focus {
       background-color: $osu;
+      border-color: $osu;
       color: $bucktoothwhite;
     }
   }
 
   &.osu-btn-dark {
     background-color: $paddletailblack;
+    border-color: $paddletailblack;
     color: $bucktoothwhite;
 
     &:hover, &:active, &:focus {
       background-color: $osu;
+      border-color: $osu;
       color: $bucktoothwhite;
     }
   }
 
   &.osu-btn-white {
     background-color: $bucktoothwhite;
+    border-color: $paddletailblack;
     color: $body;
 
     &:hover, &:active, &:focus {
       background-color: mix(white, $bucktoothwhite, 15%);
+      border-color: $osu;
     }
   }
 
   &.osu-btn-pine {
     background-color: $pine;
+    border-color: $pine;
     color: $bucktoothwhite;
 
     &:hover, &:active, &:focus {
@@ -266,6 +287,7 @@ $body: #423E3C;
 
   &.osu-btn-luminance {
     background-color: $luminance;
+    border-color: $luminance;
     color: $body;
 
     &:hover, &:active, &:focus {
@@ -275,6 +297,7 @@ $body: #423E3C;
 
   &.osu-btn-rogue-wave {
     background-color: $rogue_wave;
+    border-color: $rogue_wave;
     color: #000;
 
     &:hover, &:active, &:focus {
@@ -284,6 +307,7 @@ $body: #423E3C;
 
   &.osu-btn-stratosphere {
     background-color: $stratosphere;
+    border-color: $stratosphere;
     color: $bucktoothwhite;
 
     &:hover, &:active, &:focus {

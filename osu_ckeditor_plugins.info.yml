@@ -1,7 +1,8 @@
 name: "OSU CKEditor Plugins"
 description: "Adds OSU plugins to CKEditor"
-package: Custom
+package: OSU
 type: module
 core_version_requirement: ^8 || ^9 || ^10
+version: 1.0.1
 dependencies:
   - drupal:ckeditor

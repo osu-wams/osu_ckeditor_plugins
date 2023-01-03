@@ -35,14 +35,14 @@
 .cke_reset_all .btn {
   background-color: #f7f5f5;
   border: 1px solid #f7f5f5;
-  border-radius: 50rem;
+  border-radius: 1.5rem;
   color: #423E3C;
   cursor: pointer;
   display: inline-block;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  padding: 0.375rem 3rem;
+  padding: 0.375rem 1.5rem;
   text-align: center;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -125,14 +125,14 @@
   background-color: #005a79;
 }
 .cke_reset_all .btn-sm {
-  border-radius: 50rem;
+  border-radius: 1.5rem;
   font-size: 0.875rem;
-  padding: 0.25rem 3rem;
+  padding: 0.375rem 1.5rem;
 }
 .cke_reset_all .btn-lg {
-  border-radius: 50rem;
+  border-radius: 1.5rem;
   font-size: 1.25rem;
-  padding: 0.5rem 3rem;
+  padding: 0.375rem 1.5rem;
 }
 .cke_reset_all #selected-button {
   float: right;
@@ -152,14 +152,14 @@
 .btn {
   background-color: #f7f5f5;
   border: 1px solid #f7f5f5;
-  border-radius: 50rem;
+  border-radius: 1.5rem;
   color: #423E3C;
   cursor: pointer;
   display: inline-block;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  padding: 0.375rem 3rem;
+  padding: 0.375rem 1.5rem;
   text-align: center;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -243,15 +243,15 @@
 }
 
 .btn-sm {
-  border-radius: 50rem;
+  border-radius: 1.5rem;
   font-size: 0.875rem;
-  padding: 0.25rem 3rem;
+  padding: 0.375rem 1.5rem;
 }
 
 .btn-lg {
-  border-radius: 50rem;
+  border-radius: 1.5rem;
   font-size: 1.25rem;
-  padding: 0.5rem 3rem;
+  padding: 0.375rem 1.5rem;
 }
 
 .cke_reset_all .osu-buttons-tabs {

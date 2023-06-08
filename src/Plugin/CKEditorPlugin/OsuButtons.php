@@ -59,7 +59,7 @@ class OsuButtons extends CKEditorPluginBase implements ContainerFactoryPluginInt
    * {@inheritdoc}
    */
   public function getFile() {
-    return $this->moduleExtensionList->getPathname('osu_ckeditor_plugins') . '/js/plugins/osu_buttons/plugin.js';
+    return $this->moduleExtensionList->getPath('osu_ckeditor_plugins') . '/js/plugins/osu_buttons/plugin.js';
   }
 
   /**
@@ -73,7 +73,7 @@ class OsuButtons extends CKEditorPluginBase implements ContainerFactoryPluginInt
    * {@inheritdoc}
    */
   public function getButtons() {
-    $module_path = $this->moduleExtensionList->getPathname('osu_ckeditor_plugins');
+    $module_path = $this->moduleExtensionList->getPath('osu_ckeditor_plugins');
     return [
       'osu_buttons' => [
         'label' => $this->t('osu_buttons'),

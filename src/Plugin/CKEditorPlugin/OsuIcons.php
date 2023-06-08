@@ -58,7 +58,7 @@ class OsuIcons extends CKEditorPluginBase implements ContainerFactoryPluginInter
    * {@inheritdoc}
    */
   public function getFile() {
-    return $this->moduleExtensionList->getPathname('osu_ckeditor_plugins') . '/js/plugins/osu_icons/plugin.js';
+    return $this->moduleExtensionList->getPath('osu_ckeditor_plugins') . '/js/plugins/osu_icons/plugin.js';
   }
 
   /**
@@ -72,7 +72,7 @@ class OsuIcons extends CKEditorPluginBase implements ContainerFactoryPluginInter
    * {@inheritdoc}
    */
   public function getButtons() {
-    $module_path = $this->moduleExtensionList->getPathname('osu_ckeditor_plugins');
+    $module_path = $this->moduleExtensionList->getPath('osu_ckeditor_plugins');
     return [
       'osu_icons' => [
         'label' => $this->t('osu_icons'),

@@ -6,8 +6,8 @@
   "type": "drupal-custom-module",
   "authors": [
     {
-      "name": "your name",
-      "email": "your email"
+      "name": "Matthew Brabham",
+      "email": "matthew.brabham@oregonstate.edu"
     }
   ],
   "require": {

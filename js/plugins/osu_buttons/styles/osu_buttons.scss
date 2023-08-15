@@ -1,26 +1,4 @@
-$osu: #d73f09;
-$neutral-100: #f7f5f5;
-$paddletailblack: #212529;
-$bucktoothwhite: #ffffff;
-$pine: #4a773c;
-$luminance: #ffb500;
-$rogue_wave: #00859b;
-$stratosphere: #006a8e;
-$body: #423E3C;
-// Button Variables
-$osu-btn-padding-y: .375rem;
-$osu-btn-padding-x: 1.5rem;
-$osu-btn-radius: 1.5rem;
-$osu-btn-font-size: 1rem;
-// Small Button variant
-$osu-btn-padding-y-sm: .375rem;
-$osu-btn-padding-x-sm: 1.5rem;
-$osu-btn-font-size-sm: 0.875rem;
-
-// Large Button variant.
-$osu-btn-padding-y-lg: .375rem;
-$osu-btn-padding-x-lg: 1.5rem;
-$osu-btn-font-size-lg: 1.25rem;
+@import "abstracts/osu_cke_variables";
 
 // CKE-specific styles - Must be duplicated outside of .cke_reset_all to work outside of edit mode
 .cke_reset_all {
@@ -76,125 +54,168 @@ $osu-btn-font-size-lg: 1.25rem;
 
   // Button Styles
   .btn {
-    background-color: $neutral-100;
-    border: 1px solid $neutral-100;
-    border-radius: $osu-btn-radius;
-    color: $body;
+    background-color: var(--osu-btn-bg);
+    border: var(--osu-btn-border-width) solid var(--osu-btn-border-color);
+    border-radius: var(--osu-btn-border-radius);
+
+    --osu-btn-active-bg: #{$neutral-100};
+    --osu-btn-active-border-color: #{$neutral-100};
+    --osu-btn-active-color: #{$body};
+    --osu-btn-bg: #{$neutral-100};
+    --osu-btn-border-color: #{$neutral-100};
+    --osu-btn-border-radius: #{$osu-btn-radius};
+    --osu-btn-border-width: #{$osu-btn-border-width};
+    --osu-btn-color: #{$body};
+    --osu-btn-font-size: #{$osu-btn-font-size};
+    --osu-btn-hover-bg: #{$neutral-100};
+    --osu-btn-hover-border-color: #{$neutral-100};
+    --osu-btn-hover-color: #{$body};
+    --osu-btn-padding-x: #{$osu-btn-padding-x};
+    --osu-btn-padding-y: #{$osu-btn-padding-y};
+
+    color: var(--osu-btn-color);
     cursor: pointer;
     display: inline-block;
-    font-size: $osu-btn-font-size;
+    font-size: var(--osu-btn-font-size);
     font-weight: 400;
-    line-height: 1.5;
-    padding: $osu-btn-padding-y $osu-btn-padding-x;
+    line-height: 1.8;
+    padding: var(--osu-btn-padding-y) var(--osu-btn-padding-x);
     text-align: center;
     text-decoration: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     user-select: none;
     vertical-align: middle;
 
-    &:hover, &:active, &:focus {
-      background-color: $neutral-100;
+    &:hover {
+      background-color: var(--osu-btn-hover-bg);
+      border-color: var(--osu-btn-hover-border-color);
+      color: var(--osu-btn-hover-color);
+    }
+
+    &:active {
+      background-color: var(--osu-btn-active-bg);
+      border-color: var(--osu-btn-active-border-color);
+      color: var(--osu-btn-active-color);
       text-decoration: underline;
     }
-
-    &.osu-btn-primary {
-      background-color: $osu;
-      border-color: $osu;
-      color: $bucktoothwhite;
-
-      &:hover, &:active, &:focus {
-        background-color: $osu;
-        border-color: $paddletailblack;
-        color: $bucktoothwhite;
-      }
-    }
-
-    &.osu-btn-light {
-      background-color: $neutral-100;
-      border-color: $paddletailblack;
-      color: $body;
-
-      &:hover, &:active, &:focus {
-        background-color: $osu;
-        border-color: $osu;
-        color: $bucktoothwhite;
-      }
-    }
-
-    &.osu-btn-dark {
-      background-color: $paddletailblack;
-      border-color: $paddletailblack;
-      color: $bucktoothwhite;
-
-      &:hover, &:active, &:focus {
-        background-color: $osu;
-        border-color: $osu;
-        color: $bucktoothwhite;
-      }
-    }
-
-    &.osu-btn-white {
-      background-color: $bucktoothwhite;
-      border-color: $paddletailblack;
-      color: $body;
-
-      &:hover, &:active, &:focus {
-        background-color: mix(white, $bucktoothwhite, 15%);
-        border-color: $osu;
-      }
-    }
-
-    &.osu-btn-pine {
-      background-color: $pine;
-      border-color: $pine;
-      color: $bucktoothwhite;
-
-      &:hover, &:active, &:focus {
-        background-color: mix(black, $pine, 15%);
-      }
-    }
-
-    &.osu-btn-luminance {
-      background-color: $luminance;
-      border-color: $luminance;
-      color: $body;
-
-      &:hover, &:active, &:focus {
-        background-color: mix(white, $luminance, 15%);
-      }
-    }
-
-    &.osu-btn-rogue-wave {
-      background-color: $rogue_wave;
-      border-color: $rogue_wave;
-      color: #000;
-
-      &:hover, &:active, &:focus {
-        background-color: mix(white, $rogue_wave, 15%);
-      }
-    }
-
-    &.osu-btn-stratosphere {
-      background-color: $stratosphere;
-      border-color: $stratosphere;
-      color: $bucktoothwhite;
-
-      &:hover, &:active, &:focus {
-        background-color: mix(black, $stratosphere, 15%);
-      }
-    }
   }
 
+  // Primary Variant.
+  .osu-btn-primary {
+    --osu-btn-active-bg: #{$osu};
+    --osu-btn-active-border-color: #{$osu};
+    --osu-btn-active-color: #{$bucktoothwhite};
+    --osu-btn-bg: #{$osu};
+    --osu-btn-border-color: #{$osu};
+    --osu-btn-color: #{$bucktoothwhite};
+    --osu-btn-hover-bg: #{$paddletailblack};
+    --osu-btn-hover-border-color: #{$paddletailblack};
+    --osu-btn-hover-color: #{$bucktoothwhite};
+  }
+
+  // Light Variant.
+  .osu-btn-light {
+    --osu-btn-active-bg: #{$paddletailblack};
+    --osu-btn-active-border-color: #{$osu};
+    --osu-btn-active-color: #{$bucktoothwhite};
+    --osu-btn-bg: #{$neutral-100};
+    --osu-btn-border-color: #{$paddletailblack};
+    --osu-btn-color: #{$body};
+    --osu-btn-hover-bg: #{$osu};
+    --osu-btn-hover-border-color: #{$osu};
+    --osu-btn-hover-color: #{$bucktoothwhite};
+  }
+
+  // Dark Variant.
+  .osu-btn-dark {
+    --osu-btn-active-bg: #{$paddletailblack};
+    --osu-btn-active-border-color: #{$osu};
+    --osu-btn-active-color: #{$bucktoothwhite};
+    --osu-btn-bg: #{$paddletailblack};
+    --osu-btn-border-color: #{$paddletailblack};
+    --osu-btn-color: #{$bucktoothwhite};
+    --osu-btn-hover-bg: #{$osu};
+    --osu-btn-hover-border-color: #{$osu};
+    --osu-btn-hover-color: #{$bucktoothwhite};
+  }
+
+  // White Variant.
+  .osu-btn-white {
+    --osu-btn-active-bg: #{mix(white, $bucktoothwhite, 15%)};
+    --osu-btn-active-border-color: #{$osu};
+    --osu-btn-active-color: #{$body};
+    --osu-btn-bg: #{$bucktoothwhite};
+    --osu-btn-border-color: #{$paddletailblack};
+    --osu-btn-color: #{$body};
+    --osu-btn-hover-bg: #{mix(white, $bucktoothwhite, 15%)};
+    --osu-btn-hover-border-color: #{$osu};
+    --osu-btn-hover-color: #{$body};
+  }
+
+  // Pine Variant.
+  .osu-btn-pine {
+    --osu-btn-active-bg: #{mix(black, $pine, 15%)};
+    --osu-btn-active-border-color: #{$pine};
+    --osu-btn-active-color: #{$bucktoothwhite};
+    --osu-btn-bg: #{$pine};
+    --osu-btn-border-color: #{$pine};
+    --osu-btn-color: #{$bucktoothwhite};
+    --osu-btn-hover-bg: #{mix(black, $pine, 15%)};
+    --osu-btn-hover-border-color: #{$pine};
+    --osu-btn-hover-color: #{$bucktoothwhite};
+  }
+
+  // Luminance Variant.
+  .osu-btn-luminance {
+    --osu-btn-active-bg: #{mix(white, $luminance, 15%)};
+    --osu-btn-active-border-color: #{$luminance};
+    --osu-btn-active-color: black;
+    --osu-btn-bg: #{$luminance};
+    --osu-btn-border-color: #{$luminance};
+    --osu-btn-color: #{$body};
+    --osu-btn-hover-bg: #{mix(white, $luminance, 15%)};
+    --osu-btn-hover-border-color: #{$luminance};
+    --osu-btn-hover-color: black;
+  }
+
+  // Rogue Wave Variant.
+  .osu-btn-rogue-wave {
+    --osu-btn-active-bg: #{mix(white, $rogue_wave, 15%)};
+    --osu-btn-active-border-color: #{$rogue_wave};
+    --osu-btn-active-color: black;
+    --osu-btn-bg: #{$rogue_wave};
+    --osu-btn-border-color: #{$rogue_wave};
+    --osu-btn-color: black;
+    --osu-btn-hover-bg: #{mix(white, $rogue_wave, 15%)};
+    --osu-btn-hover-border-color: #{$rogue_wave};
+    --osu-btn-hover-color: black;
+  }
+
+  // Stratosphere Variant.
+  .osu-btn-stratosphere {
+    --osu-btn-active-bg: #{mix(black, $stratosphere, 15%)};
+    --osu-btn-active-border-color: #{$stratosphere};
+    --osu-btn-active-color: #{$bucktoothwhite};;
+    --osu-btn-bg: #{$stratosphere};
+    --osu-btn-border-color: #{$stratosphere};
+    --osu-btn-color: #{$bucktoothwhite};
+    --osu-btn-hover-bg: #{mix(black, $stratosphere, 15%)};
+    --osu-btn-hover-border-color: #{$stratosphere};
+    --osu-btn-hover-color: #{$bucktoothwhite};;
+  }
+
+  // Small Button.
   .btn-sm {
-    border-radius: $osu-btn-radius;
-    font-size: $osu-btn-font-size-sm;
-    padding: $osu-btn-padding-y-sm $osu-btn-padding-x-sm;
+    --osu-btn-font-size: #{$osu-btn-font-size-sm};
+    --osu-btn-padding-x: #{$osu-btn-padding-x-sm};
+    --osu-btn-padding-y: #{$osu-btn-padding-y-sm};
   }
 
+  // Large Button.
   .btn-lg {
-    border-radius: $osu-btn-radius;
-    font-size: $osu-btn-font-size-lg;
-    padding: $osu-btn-padding-y-lg $osu-btn-padding-x-lg;
+    --osu-btn-font-size: #{$osu-btn-font-size-lg};
+    --osu-btn-padding-x: #{$osu-btn-padding-x-lg};
+    --osu-btn-padding-y: #{$osu-btn-padding-y-lg};
   }
 
   #selected-button {
@@ -218,128 +239,7 @@ $osu-btn-font-size-lg: 1.25rem;
   .selected-size {
     border: 10px solid transparent;
   }
-}
 
-.btn {
-  background-color: $neutral-100;
-  border: 1px solid $neutral-100;
-  border-radius: $osu-btn-radius;
-  color: $body;
-  cursor: pointer;
-  display: inline-block;
-  font-size: $osu-btn-font-size;
-  font-weight: 400;
-  line-height: 1.5;
-  padding: $osu-btn-padding-y $osu-btn-padding-x;
-  text-align: center;
-  text-decoration: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  user-select: none;
-  vertical-align: middle;
-
-  &:hover, &:active, &:focus {
-    background-color: $neutral-100;
-    text-decoration: underline;
-  }
-
-  &.osu-btn-primary {
-    background-color: $osu;
-    border-color: $osu;
-    color: $bucktoothwhite;
-
-    &:hover, &:active, &:focus {
-      background-color: $osu;
-      border-color: $paddletailblack;
-      color: $bucktoothwhite;
-    }
-  }
-
-  &.osu-btn-light {
-    background-color: $neutral-100;
-    border-color: $paddletailblack;
-    color: $body;
-
-    &:hover, &:active, &:focus {
-      background-color: $osu;
-      border-color: $osu;
-      color: $bucktoothwhite;
-    }
-  }
-
-  &.osu-btn-dark {
-    background-color: $paddletailblack;
-    border-color: $paddletailblack;
-    color: $bucktoothwhite;
-
-    &:hover, &:active, &:focus {
-      background-color: $osu;
-      border-color: $osu;
-      color: $bucktoothwhite;
-    }
-  }
-
-  &.osu-btn-white {
-    background-color: $bucktoothwhite;
-    border-color: $paddletailblack;
-    color: $body;
-
-    &:hover, &:active, &:focus {
-      background-color: mix(white, $bucktoothwhite, 15%);
-      border-color: $osu;
-    }
-  }
-
-  &.osu-btn-pine {
-    background-color: $pine;
-    border-color: $pine;
-    color: $bucktoothwhite;
-
-    &:hover, &:active, &:focus {
-      background-color: mix(black, $pine, 15%);
-    }
-  }
-
-  &.osu-btn-luminance {
-    background-color: $luminance;
-    border-color: $luminance;
-    color: $body;
-
-    &:hover, &:active, &:focus {
-      background-color: mix(white, $luminance, 15%);
-    }
-  }
-
-  &.osu-btn-rogue-wave {
-    background-color: $rogue_wave;
-    border-color: $rogue_wave;
-    color: #000;
-
-    &:hover, &:active, &:focus {
-      background-color: mix(white, $rogue_wave, 15%);
-    }
-  }
-
-  &.osu-btn-stratosphere {
-    background-color: $stratosphere;
-    border-color: $stratosphere;
-    color: $bucktoothwhite;
-
-    &:hover, &:active, &:focus {
-      background-color: mix(black, $stratosphere, 15%);
-    }
-  }
-}
-
-.btn-sm {
-  border-radius: $osu-btn-radius;
-  font-size: $osu-btn-font-size-sm;
-  padding: $osu-btn-padding-y-sm $osu-btn-padding-x-sm;
-}
-
-.btn-lg {
-  border-radius: $osu-btn-radius;
-  font-size: $osu-btn-font-size-lg;
-  padding: $osu-btn-padding-y-lg $osu-btn-padding-x-lg;
 }
 
 @import 'osu_tab_interface';

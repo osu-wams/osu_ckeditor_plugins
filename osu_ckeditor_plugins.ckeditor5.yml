@@ -1,0 +1,12 @@
+osu_ckeditor_plugins_osu_buttons:
+  ckeditor5:
+    plugins:
+  drupal:
+    label: OSU Buttons
+    library: osu_ckeditor_plugins/osu_buttons
+osu_ckeditor_plugins_osu_icons:
+  ckeditor5:
+    plugins:
+  drupal:
+    label: OSU Icons
+    library: osu_ckeditor_plugins/osu_icons

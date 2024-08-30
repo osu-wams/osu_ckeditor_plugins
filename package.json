@@ -1,17 +1,19 @@
 {
-  "private": true,
-  "devDependencies": {
-    "@babel/core": "^7.17.2",
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0",
-    "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0",
-    "gulp-cli": "^2.3.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-sass": "^5.1.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "rimraf": "^3.0.2",
-    "sass": "^1.49.7"
+  "name": "drupal-ckeditor5",
+  "version": "1.0.0",
+  "description": "Drupal CKEditor 5 integration",
+  "author": "",
+  "license": "GPL-2.0-or-later",
+  "scripts": {
+    "watch": "webpack --mode development --watch",
+    "build": "webpack"
   },
-  "dependencies": {}
+  "devDependencies": {
+    "@ckeditor/ckeditor5-dev-utils": "^30.0.0",
+    "ckeditor5": "~34.1.0",
+    "raw-loader": "^4.0.2",
+    "terser-webpack-plugin": "^5.2.0",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.4.0"
+  }
 }

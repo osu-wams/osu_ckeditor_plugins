@@ -4,3 +4,22 @@
 #   For information on using annotations to define plugins.
 # @see the CKEditor 5 module's README.md for more details regarding plugin
 #   configuration options.
+
+# @see core/modules/ckeditor5/ckeditor5.ckeditor5.yml
+# @see https://www.drupal.org/project/ckeditor5_dev
+osu_ckeditor_plugins_osu_icon_picker:
+  # Configuration that will be sent to CKEditor 5 JavaScript plugins.
+  ckeditor5:
+    plugins:
+      - osuIconPicker.OsuIconPicker
+
+  # Configuration that will be used directly by Drupal.
+  drupal:
+    label: 'OSU Icon Picker'
+    library: osu_ckeditor_plugins/osu_icon_picker
+    admin_library: osu_ckeditor_plugins/admin.osu_icon_picker
+    toolbar_items:
+      osuIconPicker:
+        label: 'OSU Icon Picker'
+    # The plugin does not provide elements.
+    elements: false

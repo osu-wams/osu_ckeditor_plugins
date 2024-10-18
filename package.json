@@ -1,7 +1,7 @@
 {
-  "name": "drupal-ckeditor5",
+  "name": "osu_ckeditor_plugins",
   "version": "1.0.0",
-  "description": "Drupal CKEditor 5 integration",
+  "description": "Provides CKEditor plugin.",
   "author": "",
   "license": "GPL-2.0-or-later",
   "scripts": {
@@ -10,10 +10,13 @@
   },
   "devDependencies": {
     "@ckeditor/ckeditor5-dev-utils": "^30.0.0",
-    "ckeditor5": "~34.1.0",
+    "ckeditor5": "~35.3.2",
     "raw-loader": "^4.0.2",
-    "terser-webpack-plugin": "^5.2.0",
+    "terser-webpack-plugin": "^5.3.3",
     "webpack": "^5.51.1",
     "webpack-cli": "^4.4.0"
+  },
+  "dependencies": {
+    "universal-icon-picker": "^1.1.7"
   }
 }

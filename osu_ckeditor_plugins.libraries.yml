@@ -11,3 +11,16 @@ osu_icons:
       js/plugins/osu_icons/styles/osu_icons.css: { }
 # This adds the plugin JavaScript to the page.
 # cSpell:ignore simplebox demobox
+
+osu_icon_picker:
+  js:
+    js/build/osuIconPicker.js: { preprocess: false, minified: true }
+  dependencies:
+    - ckeditor5/ckeditor5
+
+# Loaded in the text format configuration form to provide styling for the icon
+# used in toolbar config.
+admin.osu_icon_picker:
+  css:
+    theme:
+      css/osu-icon-picker.admin.css: { }

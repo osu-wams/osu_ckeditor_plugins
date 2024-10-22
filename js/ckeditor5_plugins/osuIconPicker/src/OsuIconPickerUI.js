@@ -12,6 +12,7 @@ export default class OsuIconPickerUI extends Plugin {
 
       buttonView.set({
         label: 'Insert Icon',
+        icon,
         tooltip: true,
       });
 
@@ -20,8 +21,8 @@ export default class OsuIconPickerUI extends Plugin {
         const iconName = prompt('Enter the icon name (e.g., "fa fa-user"):');
 
         // Create select lists for size and color
-        const sizeOptions = ['icon-size-sm', 'icon-size-md', 'icon-size-lg'];
-        const colorOptions = ['icon-color-default', 'icon-color-primary', 'icon-color-danger'];
+        const sizeOptions = ['fa-1x', 'fa-2x', 'fa-3x', 'fa-4x', 'fa-5x', 'fa-6x', 'fa-7x', 'fa-8x', 'fa-9x', 'fa-10x'];
+        const colorOptions = ['primary', 'icon-color-danger'];
 
         const selectedSize = prompt('Choose a size (sm, md, lg):', 'md');
         const selectedColor = prompt('Choose a color (default, primary, danger):', 'default');
@@ -32,7 +33,7 @@ export default class OsuIconPickerUI extends Plugin {
 
         // Insert the icon into the editor
         editor.model.change(writer => {
-          const iconElement = writer.createElement('icon', {
+          const iconElement = writer.createElement('osuIcon', {
             class: iconName,
             size: sizeClass || 'icon-size-md',
             color: colorClass || 'icon-color-default',

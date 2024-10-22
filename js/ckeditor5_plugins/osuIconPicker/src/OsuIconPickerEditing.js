@@ -6,20 +6,29 @@ export default class OsuIconPickerEditing extends Plugin {
     const editor = this.editor;
 
     // Define the icon model element with class, size, and color attributes
-    editor.model.schema.extend('icon', {
-      allowWhere: '$block',
-      allowAttributes: ['class', 'size', 'color']
+    // TODO cannot extend have to create new schema object
+    const schema = editor.model.schema;
+    schema.register('osuIcon', {
+      isObject: true,
+      allowWhere: '$text',
+      isInline: true,
+      allowAttributes: ['class', 'size', 'color'],
     });
 
     // Upcast (from view to model)
     editor.conversion.for('upcast').elementToElement({
-      model: 'icon',
-      view: 'span',  // Now using <span> element for the icon
+      model: 'osuIcon',
+      // Now using <span> element for the icon
+      view: {
+        name: 'span',
+        classes: 'osu-icon',
+      },
+
     });
 
     // Downcast (from model to view)
     editor.conversion.for('downcast').elementToElement({
-      model: 'icon',
+      model: 'osuIcon',
       view: (modelElement, { writer }) => {
         const iconClass = modelElement.getAttribute('class');
         const sizeClass = modelElement.getAttribute('size');
@@ -27,11 +36,11 @@ export default class OsuIconPickerEditing extends Plugin {
 
         // Create the <span> element with the appropriate classes
         const spanElement = writer.createContainerElement('span', {
-          class: `${iconClass} ${sizeClass} ${colorClass}`,
+          class: `osu-icon ${iconClass} ${sizeClass} ${colorClass}`,
         });
 
         return toWidget(spanElement, writer);
-      }
+      },
     });
   }
 }

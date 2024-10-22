@@ -22,9 +22,9 @@ export default class OsuIconPickerUI extends Plugin {
 
         // Create select lists for size and color
         const sizeOptions = ['fa-1x', 'fa-2x', 'fa-3x', 'fa-4x', 'fa-5x', 'fa-6x', 'fa-7x', 'fa-8x', 'fa-9x', 'fa-10x'];
-        const colorOptions = ['primary', 'icon-color-danger'];
+        const colorOptions = ['primary', 'secondary', 'danger'];
 
-        const selectedSize = prompt('Choose a size (sm, md, lg):', 'md');
+        const selectedSize = prompt('Choose a size (fa-3x, fa-7x):', 'fa-3x');
         const selectedColor = prompt('Choose a color (default, primary, danger):', 'default');
 
         // Validate user input and convert to class names
@@ -35,8 +35,8 @@ export default class OsuIconPickerUI extends Plugin {
         editor.model.change(writer => {
           const iconElement = writer.createElement('osuIcon', {
             class: iconName,
-            size: sizeClass || 'icon-size-md',
-            color: colorClass || 'icon-color-default',
+            size: sizeClass || 'fa-3x',
+            color: colorClass || 'default',
           });
 
           editor.model.insertContent(iconElement);
